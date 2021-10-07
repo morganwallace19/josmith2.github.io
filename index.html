@@ -1,0 +1,277 @@
+<!-- Morgan Wallace -->
+<!-- Jo Smith -->
+<!-- Web Technologies 2 -->
+<!-- HTML Code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Smith Photography</title>
+    <link rel="shortcut icon" type="image/png" href="images/faviconnew.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!-- Twitter side menu. The menu is hidden by default, it will show once the twitter icon has been clicked -->
+     <div id="twitter" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeTwitter()">&times</a>
+        <a class="twitter-timeline" data-height="500" href="https://twitter.com/josmithphoto?ref_src=twsrc%5Etfw">Tweets by josmithphoto</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    
+    <!-- This is the arrow button that is on the bottom right corner that takes you back to the top of the page -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="max-width">
+           <a href="index.html"><img src="./images/josmith_logo.png" class="logo"></a> <!-- Logo -->
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#gallery" class="menu-btn">Gallery</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is </div>
+                <div class="text-2">Jo Smith </div>
+                <div class="text-3">And i am a <span class="typing"></span></div> <!-- The text that has a typing transition-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./images/daniel-spase-wjg1xo7yi-g-unsplash.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Who am I?</div>
+                    <p>My name is Jo Smith and i am a graduate photographer from an art college in Dundee. I am born and raised in Dundee and have lived there my whole life. I am trained in nature photography but to make a living, i have used my skills in general photography. My prospective clients are engaged couples to be married. Below you can click to see my Twitter. I also have an Instagram.</p>
+                    <a onclick="openTwitter()">Follow @josmithphoto</a> <!-- Button to click on to view the Twitter side menu -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography section -->
+    <section class="photography" id="photography">
+        <div class="max-width">
+            <h2 class="title">Photography I do</h2>
+            <div class="serv-content">
+               <div class="card">
+                   <div class="box">
+                       <i class="fas fa-ring"></i>
+                       <div class="text">Weddings</div>
+                       <p>These include wedding events and engagements.</p>
+                   </div>
+               </div>
+
+               <div class="card">
+                <div class="box">
+                    <i class="fas fa-mountain"></i>
+                    <div class="text">Landscapes</div>
+                    <p>These include photographs of amazing scenery.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-tree"></i>
+                    <div class="text">Nature</div>
+                    <p>These include photographs of natural scenery like forests and lakes.</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Gallery section -->
+    <section class="gallery" id="gallery">
+        <div class="max-width">
+        <h2 class="title">Gallery</h2>
+    <div class="wrapper">
+        <div class="gallery">
+            <div class="image"><span><img src="images/wedding16.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/red_rose.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/landscape10.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/wedding10.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/engagement1.png" alt=""></span></div>
+            <div class="image"><span><img src="images/landscape8.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/landscape12.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/doorway.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/roses-1473689_640.jpg" alt=""></span></div>
+        </div>
+    </div>
+
+    <!-- These are the div classes where the images would move in a lightbox gallery -->
+    <div class="preview-box">
+        <div class="details">
+            <span class="title2">
+                Image <p class="current-img"></p>
+                of <p class="total-img"></p>
+            </span>
+            <span class="icon fas fa-times"></span>
+        </div>
+        <div class="img-box">
+            <div class="slide prev">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="slide next">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <img src="" alt="">
+        </div>
+    </div>
+    
+    <div class="shadow"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Services section -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Services</h2>
+            <div class="carousel owl-carousel"> <!-- This is the carousel -->
+                <div class="card">
+                    <div class="box">
+                    <i class="fas fa-camera-retro"></i>
+                    <div class="text">Private events</div>
+                    <p>Private events usually goes for £40 per hour.</p>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="text">Short term contractual work</div>
+                    <p>Short term contractual work goes for £25 per hour.</p>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                    <i class="fas fa-camera"></i>
+                    <div class="text">Long term contractual work</div>
+                    <p>Long term contractual work is negotiable.</p>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                    <i class="fas fa-image"></i>
+                    <div class="text">Framed Photos</div>
+                    <p>I also sell framed photographs to local companies and this is expanding.</p>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                    <i class="fas fa-mug-hot"></i>
+                    <div class="text">Framed Photos</div>
+                    <p>My framed photos are sold to local bars, cafes, and restaurants to customers for 10% of the sale value.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>My details are below:</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">987 Brook Street,
+                                    Dundee,
+                                    DD5 2EA
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-twitter"></i>
+                            <div class="info">
+                                <div class="head">Twitter</div>
+                                <div class="sub-title">@josmithphoto</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-instagram"></i>
+                            <div class="info">
+                                <div class="head">Instagram</div>
+                                <div class="sub-title">@josmithphotography123</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#" method="POST" data-netlify="true"> <!-- This makes the form responsive when hosted on Netlify -->
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>  
+                        <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps embedded -->
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1102.080282803092!2d-2.8655917602750507!3d56.46499483244973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1633289881346!5m2!1sen!2suk" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer section start -->
+    <footer>
+        <span>Created By <a href="#">Morgan Wallace</a> | <span class="far fa-copyright"></span> 2021 All rights reserved</span>
+    </footer>
+
+<!-- This is the JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
